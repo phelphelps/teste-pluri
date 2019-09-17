@@ -9,7 +9,8 @@ import { TrendingMoviesComponent } from './trending-movies/trending-movies.compo
 import { HttpClientModule } from '@angular/common/http';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { SearchMoviesComponent } from './search-movies/search-movies.component'
 
 
 
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component'
     TrendingMoviesComponent,
     MovieDetailComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SearchMoviesComponent
   ],
   imports: [
     BrowserModule,

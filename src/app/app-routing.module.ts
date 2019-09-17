@@ -4,6 +4,8 @@ import {HomeComponent} from './home/home.component';
 import {MovieDetailComponent} from './movie-detail/movie-detail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TrendingMoviesComponent } from './trending-movies/trending-movies.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchMoviesComponent } from './search-movies/search-movies.component';
 
 
 const routes: Routes = [
@@ -11,7 +13,9 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'detail/:id', component: MovieDetailComponent},
   {path: 'navbar', component: NavbarComponent},
-  {path: 'trendingmovies', component: TrendingMoviesComponent}
+  {path: 'trendingmovies', component: TrendingMoviesComponent},
+  {path: 'footer', component: FooterComponent},
+  {path: 'search', component: SearchMoviesComponent}
 ];
 
 @NgModule({
