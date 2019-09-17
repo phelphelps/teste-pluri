@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router'
 import { Location } from '@angular/common';
 import { MoviesService } from '../services/movies.service';
 
+
 @Component({
   selector: 'app-movie-detail',
   templateUrl: './movie-detail.component.html',
