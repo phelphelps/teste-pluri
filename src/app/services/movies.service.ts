@@ -26,9 +26,9 @@ export class MoviesService {
 		return this.getSomething("/trending/all/week")
 	}
 	searchMovies(user_input):Promise<any> {
-		return this.http.get(this.url + "/discover/movie" + this.api_key + this.language + "&" + user_input).toPromise();
+		return this.getSomething("&with_keywords="+user_input)
 	}
 
-}
+} 
 
 

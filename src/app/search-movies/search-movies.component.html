@@ -1,7 +1,8 @@
-<input type="text" placeholder="Pesquisar filmes" (keyup)="getMovies($event)">
+<input class="mat-form-field" type="text" placeholder="Pesquisar filmes" (keyup)="getMovies($event)">
 <h2></h2>
 <ul *ngFor="let movie of movies">
     <li>
-            llll {{movie?.title}} kk
+        {{movie?.title}} 
     </li>
 </ul>
+<button mat-raised-button color="primary">Click me!</button>

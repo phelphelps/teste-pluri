@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from './material'
 import { TrendingMoviesComponent } from './trending-movies/trending-movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
@@ -25,6 +26,7 @@ import { SearchMoviesComponent } from './search-movies/search-movies.component'
     SearchMoviesComponent
   ],
   imports: [
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
