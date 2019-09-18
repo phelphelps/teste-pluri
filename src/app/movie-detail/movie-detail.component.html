@@ -2,12 +2,30 @@
 <div>
 
 </div>
-<div>
-    <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}"/>
-    {{movie.title}}
-    {{movie.overview}}
-    {{movie.vote_count}}
-    {{movie.overiew}}
+<div class="container">
+    <div style="margin-right: 10px;">
+    <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" class="movie-poster" />
+    </div>
+    <div>
+            <mat-card class="example-card">
+                    <mat-card-header>
+                      
+                      <mat-card-title>{{movie.title}}</mat-card-title>
+                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                      <mat-card-subtitle>
+                            {{movie.overview}}
+                      </mat-card-subtitle>
+                           
+                      
+                    </mat-card-content>
+                  </mat-card>
+    </div>
+    
+    
+    
 
 </div>
+
 <app-footer></app-footer>

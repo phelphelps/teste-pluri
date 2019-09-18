@@ -1,0 +1,22 @@
+.movie-poster{
+    max-width: 250px;
+}
+
+#trending{
+    cursor: pointer;
+}
+.container {
+    margin-top: 75px;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+}
+#no-wrap-please{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:230px; 
+}

@@ -1,7 +1,26 @@
-<ul>
-    <li *ngFor="let movie of movies">
-        <div>
-         <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}"/>
-        {{movie.id}}</div>
-    </li>
-</ul>
+<div class="container">
+    <h3>Tendências da semana</h3>
+    <ul>
+        <li *ngFor="let movie of movies">
+            <mat-card class="example-card" routerLink="/detail/{{movie.id}}" class="movie-poster" id="trending">
+                <mat-card-header>
+                    
+                    <mat-card-title id="no-wrap-please">{{movie.title}}</mat-card-title>
+                    <!--<mat-card-subtitle><i class="material-icons">
+                            favorite_border
+                        </i>{{movie.popularity}}</mat-card-subtitle>!-->
+                </mat-card-header>
+                <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" class="movie-poster" />
+                <mat-card-content>
+                    <p>
+
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </li>
+    </ul>
+    <mat-list>
+        <mat-list-item>Item 1</mat-list-item>
+
+    </mat-list>
+</div>

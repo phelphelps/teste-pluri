@@ -1,4 +1,8 @@
-<input class="mat-form-field" type="text" placeholder="Pesquisar filmes" (keyup)="getMovies($event)">
+
+
+        <mat-form-field class="search-bar container">
+          <input matInput placeholder="Pesquisar filmes" (keyup)="getMovies($event)">
+        </mat-form-field>
 <h2></h2>
 <ul *ngFor="let movie of movies">
     <li>

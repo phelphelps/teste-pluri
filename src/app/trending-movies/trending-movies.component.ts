@@ -6,16 +6,22 @@ import { MoviesService } from '../services/movies.service';
   styleUrls: ['./trending-movies.component.css']
 })
 export class TrendingMoviesComponent implements OnInit {
-  movies:any;
-  constructor(private movieService:MoviesService) {
-    
+  movies: any;
+  constructor(private movieService: MoviesService) {
+
   }
-  
+
   ngOnInit() {
     this.getTrendingMovies()
   }
-  getTrendingMovies():void{
-    this.movieService.getTrendingMovies().then(trending=> this.movies = trending.results);
-
-}
+  getTrendingMovies(): void {
+    this.movieService.getTrendingMovies().then(trending => this.movies = trending.results);
+  }
+  addDotsNoWrap(word, max){
+    const dots = "...";
+    if(word.length > max){
+      word = word.substring(0,max) + dots;
+    }
+      return word;
+  }
 }
