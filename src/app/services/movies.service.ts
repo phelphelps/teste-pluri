@@ -28,7 +28,11 @@ export class MoviesService {
 	searchMovies(user_input):Promise<any> {
 		return this.http.get(this.url+"/search/movie"+this.api_key+this.language+"&query="+user_input).toPromise()
 	}
+	getSimilarMovie(movie_id):Promise<any>{
+		return this.getMovie(movie_id+"/similar")
+	}
 
-} 
+}/**https://api.themoviedb.org/3/movie/299534/similar?api_key=ab006f3b8bed790ea372980a14e6eab4&language=pt_BR&page=1
+ */
 
 
