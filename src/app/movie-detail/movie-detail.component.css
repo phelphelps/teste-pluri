@@ -10,13 +10,30 @@
 }
 .back {
     position: absolute;
-    width: auto; 
+    width: 100vw; 
     max-height: 100vh; 
     top: 0; 
     left: 0; 
     opacity: .2; 
     z-index: -1;
     background-image: linear-gradient(to bottom, rgba(239,239,239,255), rgba(239,239,239,0));
+}
+.more-info-container{
+    justify-content: center;
+    width: 70vw;
+    margin: 40px 0 0 25px;
+    padding: 5px;
+    
+}
+.company-img{
+    width: 30px;
+}
+.more-info{
+    
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+
 }
 ul{
     list-style: none;

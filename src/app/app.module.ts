@@ -15,7 +15,6 @@ import { SearchMoviesComponent } from './search-movies/search-movies.component';
 import { SimilarMoviesComponent } from './similar-movies/similar-movies.component'
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

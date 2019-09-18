@@ -22,11 +22,3 @@
 mat-chip{
     cursor: pointer;
 }
-li{
-    list-style: none;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}

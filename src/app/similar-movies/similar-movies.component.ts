@@ -18,5 +18,7 @@ export class SimilarMoviesComponent implements OnInit {
   getSimilarMovies(){
     const id = +this.route.snapshot.paramMap.get('id');
     this.movieService.getSimilarMovies(id).then(similar_movies=> this.similar_movies_array = similar_movies.results)
-  }
+  } 
+ 
+ 
 }
