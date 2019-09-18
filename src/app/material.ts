@@ -12,18 +12,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
-
+const material = [MatFormFieldModule, MatButtonModule, MatCardModule,
+                  MatDividerModule, MatListModule, MatExpansionModule,
+                  MatInputModule, MatChipsModule, MatMenuModule,
+                  MatToolbarModule]
 
 
 @NgModule({
-    imports:[MatFormFieldModule, MatButtonModule, MatCardModule,
-             MatDividerModule, MatListModule, MatExpansionModule,
-             MatInputModule, MatChipsModule, MatMenuModule,
-             MatToolbarModule],
-    exports:[MatFormFieldModule, MatButtonModule, MatCardModule,
-             MatDividerModule, MatListModule, MatExpansionModule,
-             MatInputModule, MatChipsModule, MatMenuModule,
-             MatToolbarModule],
+    imports: material,
+    exports: material,
 })
 
 export class MaterialModule {
