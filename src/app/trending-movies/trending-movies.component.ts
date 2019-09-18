@@ -8,20 +8,13 @@ import { MoviesService } from '../services/movies.service';
 export class TrendingMoviesComponent implements OnInit {
   movies: any;
   constructor(private movieService: MoviesService) {
-
   }
 
   ngOnInit() {
     this.getTrendingMovies()
   }
-  getTrendingMovies(): void {
+  getTrendingMovies() {
     this.movieService.getTrendingMovies().then(trending => this.movies = trending.results);
   }
-  addDotsNoWrap(word, max){
-    const dots = "...";
-    if(word.length > max){
-      word = word.substring(0,max) + dots;
-    }
-      return word;
-  }
+
 }

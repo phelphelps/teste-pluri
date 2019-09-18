@@ -16,6 +16,9 @@ export class MoviesService {
 	}
 
 	getSomething(something): Promise<any> {
+		/**Como as requisições são bem similares, esse método engloba a maioria delas,
+		 * com isso repetimos menos o código :)
+		 */
 		return this.http.get(this.url + something + this.api_key + this.language).toPromise();
 	}
 
@@ -28,7 +31,7 @@ export class MoviesService {
 	searchMovies(user_input):Promise<any> {
 		return this.http.get(this.url+"/search/movie"+this.api_key+this.language+"&query="+user_input).toPromise()
 	}
-	getSimilarMovie(movie_id):Promise<any>{
+	getSimilarMovies(movie_id):Promise<any>{
 		return this.getMovie(movie_id+"/similar")
 	}
 

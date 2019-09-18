@@ -11,7 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { SearchMoviesComponent } from './search-movies/search-movies.component'
+import { SearchMoviesComponent } from './search-movies/search-movies.component';
+import { SimilarMoviesComponent } from './similar-movies/similar-movies.component'
 
 
 
@@ -23,7 +24,8 @@ import { SearchMoviesComponent } from './search-movies/search-movies.component'
     MovieDetailComponent,
     HomeComponent,
     FooterComponent,
-    SearchMoviesComponent
+    SearchMoviesComponent,
+    SimilarMoviesComponent
   ],
   imports: [
     MaterialModule,

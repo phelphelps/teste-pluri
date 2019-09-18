@@ -20,9 +20,9 @@
                 <ul>
                     <mat-chip-list>
                         <li *ngFor="let genre of movie.genres">
-                                <mat-chip  color="primary" selected>{{genre.name}} </mat-chip> 
-                        
-                            
+                            <mat-chip color="primary" selected>{{genre.name}} </mat-chip>
+
+
                         </li>
                     </mat-chip-list>
                 </ul>
@@ -34,6 +34,8 @@
 
 
 </div>
-
-
+<h3>
+    Talvez voce tambem possa gostar:
+</h3>
+<app-similar-movies></app-similar-movies>
 <app-footer></app-footer>

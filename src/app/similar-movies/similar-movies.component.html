@@ -1,0 +1,15 @@
+<div class="container">
+        <h2 style="margin: 40px 0 0 40px;">Tendências da semana</h2>
+        <ul>
+            <li *ngFor="let similar_movie of similar_movies_array">
+                <div class="card">
+                <mat-card routerLink="/detail/{{similar_movie.id}}" class="movie-poster">
+                    <mat-card-header> 
+                        <mat-card-title id="no-wrap-please">{{similar_movie.title}}</mat-card-title>
+                    </mat-card-header>
+                    <img src="https://image.tmdb.org/t/p/original{{similar_movie.poster_path}}" class="movie-poster" />
+                </mat-card>
+                </div>
+            </li>
+        </ul>
+    </div>
