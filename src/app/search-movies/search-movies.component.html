@@ -1,18 +1,20 @@
-<mat-form-field class="search-bar container">
-    <h3 style="text-align: center ">Busque por seu filme favorito!</h3>
-    <input matInput (keyup)="getMovies($event)">
-</mat-form-field>
+<div class="container">
+    <h2 style="text-align: center; margin-top: 125px;">O maior catálogo online para pesquisa de filmes do Brasil!</h2>
+    <mat-form-field class="search-bar" [floatLabel]="always">
 
-
-
+        <input matInput placeholder="Digite o nome do filme..." (keyup)="getMovies($event)">
+    </mat-form-field>
+</div>
 
 <div class="mini-card-container">
-    <div *ngFor="let movie of movies" class="mini-cards mat-elevation-z2" routerLink="/detail/{{movie.id}}">
-        <div>
-            <img src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" class="mini-card-image" />
-        </div>
-        <div class="mini-card-title">
-            {{movie?.title}}
-        </div>
+    <div *ngFor="let movie of movies" class="mini-cards">
+        <mat-chip-list>
+            <mat-chip color="primary" selected class="mat-elevation-z2" routerLink="/detail/{{movie.id}}">
+                <i class="material-icons">
+                    slideshow
+                </i>
+                {{movie?.title}}
+            </mat-chip>
+        </mat-chip-list>
     </div>
 </div>

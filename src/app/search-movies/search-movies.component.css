@@ -1,5 +1,8 @@
 .search-bar{
     width: 80vw;
+}
+.container{
+    justify-content: center;
     margin: 75px 0 0 25px;
 }
 .mini-cards{
@@ -7,7 +10,6 @@
     border-radius: 3px;
     flex-wrap: wrap;
     margin: 0px 20px 20px 0px;
-   
 }
 .mini-card-container{
     padding: 25px;
@@ -17,10 +19,8 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.mini-card-image{
-    border-radius: 3px;
-    height: 85px;
-    
+mat-chip{
+    cursor: pointer;
 }
 li{
     list-style: none;

@@ -1,14 +1,17 @@
 <div class="container">
-        <ul>
-            <li *ngFor="let similar_movie of similar_movies_array">
-                <div class="card">
-                <mat-card routerLink="/detail/{{similar_movie.id}}" class="movie-poster">
-                    <mat-card-header> 
+    <h3>
+        Talvez você também possa gostar:
+    </h3>
+    <ul>
+        <li *ngFor="let similar_movie of similar_movies_array">
+            <div routerLink="/detail/{{similar_movie.id}}" class="card">
+                <mat-card class="movie-poster">
+                    <mat-card-header>
                         <mat-card-title id="no-wrap-please">{{similar_movie.title}}</mat-card-title>
                     </mat-card-header>
                     <img src="https://image.tmdb.org/t/p/original{{similar_movie.poster_path}}" class="movie-poster" />
                 </mat-card>
-                </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </li>
+    </ul>
+</div>

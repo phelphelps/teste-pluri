@@ -1,10 +1,11 @@
 <app-navbar></app-navbar>
 <div>
-
+    <img class="back" src="https://image.tmdb.org/t/p/original{{movie.backdrop_path}}">
 </div>
 <div class="container">
     <div style="margin-right: 10px;">
         <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" class="movie-poster" />
+        
     </div>
     <div>
         <mat-card>
@@ -34,8 +35,5 @@
 
 
 </div>
-<h3>
-    Talvez voce tambem possa gostar:
-</h3>
 <app-similar-movies></app-similar-movies>
 <app-footer></app-footer>

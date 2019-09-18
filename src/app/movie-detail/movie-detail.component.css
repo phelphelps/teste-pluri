@@ -8,12 +8,15 @@
     align-items: center;
     justify-content: center;
 }
-.bg {
-    background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #999;
+.back {
+    position: absolute;
+    width: auto; 
+    max-height: 100vh; 
+    top: 0; 
+    left: 0; 
+    opacity: .2; 
+    z-index: -1;
+    background-image: linear-gradient(to bottom, rgba(239,239,239,255), rgba(239,239,239,0));
 }
 ul{
     list-style: none;

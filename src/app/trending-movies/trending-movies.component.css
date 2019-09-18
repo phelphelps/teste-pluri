@@ -1,11 +1,6 @@
 .movie-poster{
     max-width: 130px;
 }
-
-.container {
-    align-items: center;
-    justify-content: center;
-}
 li{
     list-style: none;
 }
@@ -14,12 +9,16 @@ ul{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
 }
 #no-wrap-please{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width:120px; 
+}
+h2{
+    margin:0;
 }
 .card{
     cursor: pointer;
