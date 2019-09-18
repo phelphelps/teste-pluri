@@ -18,7 +18,8 @@ ul{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width:120px; 
+    width:120px;
+    font-size: 11pt;
 }
 .card{
     cursor: pointer;
