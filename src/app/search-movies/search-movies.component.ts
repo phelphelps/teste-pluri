@@ -11,9 +11,17 @@ export class SearchMoviesComponent implements OnInit {
   constructor(private movieService:MoviesService) { }
 
   ngOnInit() { }
+  
+  clearmovies(){
+    this.movies = []
+  }
   getMovies(event){
     const user_input = event.target.value;
+    if (user_input){
     this.movieService.searchMovies(user_input).then(movies=>this.movies = movies.results)
-    
+  } else {
+    this.clearmovies()
   }
+ 
+}
 }

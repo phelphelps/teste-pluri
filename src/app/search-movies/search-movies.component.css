@@ -4,3 +4,31 @@
 .container {
     margin-left: 25px;
 }
+.mini-cards{
+    display: inline-flex;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    margin: 0px 20px 20px 0px;
+   
+}
+.mini-card-container{
+    padding: 25px;
+}
+.mini-card-title{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mini-card-image{
+    border-radius: 3px;
+    height: 85px;
+    
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -6,6 +6,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -13,10 +14,10 @@ import {MatInputModule} from '@angular/material/input';
 @NgModule({
     imports:[MatFormFieldModule, MatButtonModule, MatCardModule,
              MatDividerModule, MatListModule, MatExpansionModule,
-             MatInputModule],
+             MatInputModule, MatChipsModule],
     exports:[MatFormFieldModule, MatButtonModule, MatCardModule,
              MatDividerModule, MatListModule, MatExpansionModule,
-             MatInputModule],
+             MatInputModule, MatChipsModule],
 })
 
 export class MaterialModule {
