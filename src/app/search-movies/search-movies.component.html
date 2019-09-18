@@ -5,23 +5,13 @@
 
 
 
-   <div class="mini-card-container" >
-        <div *ngFor="let movie of movies" class="mini-cards mat-elevation-z2" routerLink="/detail/{{movie.id}}">
-            <div >
-                <img src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}"class="mini-card-image" />
-            </div>
-            <div class="mini-card-title">
-                {{movie?.title}}
-            </div>
+<div class="mini-card-container">
+    <div *ngFor="let movie of movies" class="mini-cards mat-elevation-z2" routerLink="/detail/{{movie.id}}">
+        <div>
+            <img src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" class="mini-card-image" />
+        </div>
+        <div class="mini-card-title">
+            {{movie?.title}}
         </div>
     </div>
-    
-
-
-<!--https://image.tmdb.org/t/p/w92/-->
-
-<div>
-
-
-
 </div>

@@ -2,10 +2,11 @@
     width: 300px;
 }
 .container{
-    margin-top: 75px;
-    margin-left: 30px;
+    margin-top: 105px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .bg {
     background-position: center center;
@@ -29,5 +30,8 @@ mat-card{
 }
 mat-card-title{
     margin: 0;
-    padding: 0;
+    padding: 0px;
+}
+.card-content{
+    margin-top: 325px;
 }

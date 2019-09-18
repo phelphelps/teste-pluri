@@ -7,6 +7,10 @@ import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
 
 
 
@@ -14,10 +18,12 @@ import {MatChipsModule} from '@angular/material/chips';
 @NgModule({
     imports:[MatFormFieldModule, MatButtonModule, MatCardModule,
              MatDividerModule, MatListModule, MatExpansionModule,
-             MatInputModule, MatChipsModule],
+             MatInputModule, MatChipsModule, MatMenuModule,
+             MatToolbarModule],
     exports:[MatFormFieldModule, MatButtonModule, MatCardModule,
              MatDividerModule, MatListModule, MatExpansionModule,
-             MatInputModule, MatChipsModule],
+             MatInputModule, MatChipsModule, MatMenuModule,
+             MatToolbarModule],
 })
 
 export class MaterialModule {

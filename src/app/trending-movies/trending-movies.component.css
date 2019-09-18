@@ -1,5 +1,5 @@
 .movie-poster{
-    max-width: 250px;
+    max-width: 150px;
 }
 
 #trending{
@@ -7,16 +7,22 @@
 }
 .container {
     margin-top: 75px;
+    align-items: center;
 }
 li{
     list-style: none;
 }
 ul{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 #no-wrap-please{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width:230px; 
+    width:140px; 
+}
+.card{
+    margin: 0px 5px 5px 0;
 }

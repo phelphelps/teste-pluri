@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../services/movies.service';
+import { isEmptyExpression } from '@angular/compiler';
 
 @Component({
   selector: 'app-search-movies',
@@ -8,20 +9,25 @@ import { MoviesService } from '../services/movies.service';
 })
 export class SearchMoviesComponent implements OnInit {
   movies: [];
-  constructor(private movieService:MoviesService) { }
+  constructor(private movieService: MoviesService) { }
 
   ngOnInit() { }
-  
-  clearmovies(){
+
+  clearmovies() {
     this.movies = []
   }
-  getMovies(event){
+  getMovies(event) {
     const user_input = event.target.value;
-    if (user_input){
-    this.movieService.searchMovies(user_input).then(movies=>this.movies = movies.results)
-  } else {
-    this.clearmovies()
+    if (user_input) {
+      this.movieService.searchMovies(user_input).then(movies => this.movies = movies.results)
+    } else {
+      this.clearmovies()
+    }
   }
- 
-}
+  isEmpty() {
+    if (this.movies == []) {
+      return true
+    }
+
+  }
 }
